@@ -11,7 +11,7 @@ It is developed as a wrapper around [Apache Commons Email](http://commons.apache
 - attaching multiple files from the file system or from URLs
 - sending HTML formatted emails with inline images
 
-What's new in version 0.6
+What's new in version 0.6.1
 -------------------------
 **10th April 2017**
 
