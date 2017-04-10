@@ -209,6 +209,7 @@ send.mail <- function(from, to, subject = "", body = "", encoding = "iso-8859-1"
 
   if(file.exists(body))
     body <- readChar(body, file.info(body)$size)
+    body <- iconv(body, 'UTF-8','GBK')   #为了实现发送中文，再一次编译body
 
   if(html)
   {
