@@ -13,11 +13,10 @@ It is developed as a wrapper around [Apache Commons Email](http://commons.apache
 
 What's new in version 0.6
 -------------------------
-**18th January 2016**
+**10th April 2017**
 
 *Enhancements*
-- Refinement to the stripped down text version of HTML emails for incompatible clients (thanks to @dtenenba)
-- Ability to add email headers by passing a named list `headers` (thanks to @dtenenba)
+- add chinese for rmarkdown with utf-8
 
 Installation instructions
 =========================
@@ -26,7 +25,7 @@ You can install the latest development version of mailR using devtools:
 ```R
 install.packages("devtools", dep = T)
 library(devtools)
-install_github("rpremraj/mailR")
+install_github("yusgit/mailR")
 
 library(mailR)
 ```
@@ -76,7 +75,8 @@ To send an email with utf-8 or other encoding:
 email <- send.mail(from = "Sender Name <sender@gmail.com>",
                    to = "recipient@gmail.com",
                    subject = "A quote from Gandhi",
-                   body = "In Hindi :  थोडा सा अभ्यास बहुत सारे उपदेशों से बेहतर है।
+                   body = "In Hindi :  `$%`%`$!`$> `$8`$> `$`$-`%
+`$/`$>`$8 `$,`$9`%`$$ `$8`$>`$0`% `$	`$*`$&`%`$6`%`$ `$8`% `$,`%`$9`$$`$0 `$9`%`%$
                    English translation: An ounce of practice is worth more than tons of preaching.",
                    encoding = "utf-8",
                    smtp = list(host.name = "smtp.gmail.com", port = 465, user.name = "gmail_username", passwd = "password", ssl = T),
