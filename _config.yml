@@ -2,7 +2,7 @@ title: Mailr
 description: A utility to send emails from the R programming environment
 google_analytics: UA-51353779-1
 show_downloads: true
-theme: jekyll-theme-minimal
+theme: jekyll-theme-midnight
 
 gems:
   - jekyll-mentions
